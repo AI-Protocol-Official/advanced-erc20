@@ -58,7 +58,7 @@ What's inside?
 Following steps were tested to work in macOS Catalina
 
 1. Clone the repository  
-    ```git clone git@github.com:lazy-sol/advanced-erc20.git```
+    ```git clone git@github.com:AI-Protocol-Official/advanced-erc20.git```
 2. Navigate into the cloned repository  
     ```cd advanced-erc20```
 3. Install [Node Version Manager (nvm)](https://github.com/nvm-sh/nvm) – latest  
