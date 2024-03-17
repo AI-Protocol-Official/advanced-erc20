@@ -31,11 +31,6 @@ const {
 	advanced_erc20_deploy_detached,
 } = require("./include/deployment_routines");
 
-// event helper functions in use
-const {
-	expectEventInTransaction
-} = require("../include/event_helper");
-
 // run ERC20 deployment tests
 contract("ERC20: Deployment tests", function(accounts) {
 	// extract accounts to be used:

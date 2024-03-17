@@ -9,7 +9,7 @@
 const {
 	toBN,
 	print_amt,
-} = require("../scripts/include/bn_utils");
+} = require("@lazy-sol/a-missing-gem/bn_utils");
 
 // Zeppelin helper constants
 const {
@@ -21,7 +21,7 @@ const {
 // deployment utils (contract state printers)
 const {
 	print_contract_details,
-} = require("../scripts/deployment_utils");
+} = require("@lazy-sol/a-missing-gem/deployment_utils");
 
 // to be picked up and executed by hardhat-deploy plugin
 module.exports = async function({deployments, getChainId, getNamedAccounts, getUnnamedAccounts}) {
@@ -38,7 +38,7 @@ module.exports = async function({deployments, getChainId, getNamedAccounts, getU
 	console.log("network %o %o", chainId, network.name);
 	console.log("accounts: %o, service account %o, nonce: %o, balance: %o ETH", accounts.length, A0, nonce, print_amt(balance));
 
-	// AdvancedERC20_Impl – to be used in Token Factory as impl contract
+	// AdvancedERC20_Impl
 	{
 		// deploy if required
 		await deployments.deploy("AdvancedERC20_Impl", {
@@ -47,7 +47,7 @@ module.exports = async function({deployments, getChainId, getNamedAccounts, getU
 			from: A0,
 			contract: "AdvancedERC20",
 			// the list of argument for the constructor (or the upgrade function in case of proxy)
-			args: [ZERO_ADDRESS, "implementation contract, not for use", "N/A", ZERO_ADDRESS, 0, 0],
+			args: [ZERO_ADDRESS, "Advanced Token", "ADV", ZERO_ADDRESS, 0, 0],
 			// if set it to true, will not attempt to deploy even if the contract deployed under the same name is different
 			skipIfAlreadyDeployed: true,
 			// if true, it will log the result of the deployment (tx hash, address and gas used)

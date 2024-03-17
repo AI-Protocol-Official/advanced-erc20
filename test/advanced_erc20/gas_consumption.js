@@ -18,10 +18,10 @@ const {
 } = constants;
 
 // BN constants and utilities
-const {random_bn} = require("../../scripts/include/bn_utils");
+const {random_bn} = require("@lazy-sol/a-missing-gem/bn_utils");
 
 // block utils
-const {extract_gas} = require("../include/block_utils");
+const {extract_gas} = require("@lazy-sol/a-missing-gem/block_utils");
 
 // token constants
 const {

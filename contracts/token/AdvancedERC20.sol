@@ -7,7 +7,7 @@ import "../interfaces/EIP3009.sol";
 import "../lib/AddressUtils.sol";
 import "../lib/ECDSA.sol";
 
-import "@lazy-sol/access-control-upgradeable/contracts/InitializableAccessControl.sol";
+import "@ai-protocol/access-control-upgradeable/contracts/InitializableAccessControl.sol";
 
 /**
  * @title Advanced ERC20

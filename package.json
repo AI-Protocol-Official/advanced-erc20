@@ -4,7 +4,7 @@
 	"description": "Feature rich lightweight ERC20 implementation",
 	"main": "index.js",
 	"engines": {
-		"node": ">=18.19.1"
+		"node": ">=16.0.0"
 	},
 	"scripts": {
 		"clean": "hardhat clean",
@@ -34,18 +34,19 @@
 	},
 	"homepage": "https://github.com/AI-Protocol-Official/advanced-erc20#advanced-erc20",
 	"dependencies": {
-		"@lazy-sol/access-control-upgradeable": "github:lazy-sol/access-control-upgradeable",
+		"@ai-protocol/access-control-upgradeable": "github:AI-Protocol-Official/access-control-upgradeable",
+		"@lazy-sol/a-missing-gem": "^1.0.2",
 		"@nomiclabs/hardhat-truffle5": "^2.0.7",
 		"@nomiclabs/hardhat-web3": "^2.0.0",
 		"@openzeppelin/contracts": "4.9.3",
 		"@openzeppelin/contracts-upgradeable": "4.9.3",
 		"dotenv": "^16.4.5",
-		"hardhat": "^2.20.1",
+		"hardhat": "^2.16.0",
 		"hardhat-dependency-compiler": "^1.1.3",
 		"hardhat-deploy": "^0.11.45"
 	},
 	"devDependencies": {
-		"@openzeppelin/test-helpers": "^0.5.15",
+		"@openzeppelin/test-helpers": "github:AI-Protocol-Official/openzeppelin-test-helpers",
 		"chai": "^4.4.1",
 		"chai-subset": "^1.6.0",
 		"eth-sig-util": "^3.0.1",

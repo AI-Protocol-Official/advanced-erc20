@@ -18,7 +18,7 @@ const {
 } = constants;
 
 // BN constants and utilities
-const {random_bn} = require("../../scripts/include/bn_utils");
+const {random_bn} = require("@lazy-sol/a-missing-gem/bn_utils");
 
 // token constants
 const {
